@@ -3,7 +3,7 @@ defmodule Converter do
     round_to(value, 1)
   end
 
-  def to_km(value) do
+  def to_km(value) when is_integer(value) or is_float(value) do
     value / 1000
   end
 
@@ -31,7 +31,15 @@ defmodule Converter do
     (value / 3600) |> to_nearest_tenth
   end
 
-  defp round_to(value, precision), do: Float.round(value, precision)
+  def round_to(value, precision \\ 0)
+
+  def round_to(value, _precision) when is_integer(value) do
+    round(value)
+  end
+
+  def round_to(value, precision) when is_float(value) do
+    Float.round(value, precision)
+  end
 end
 
 # defmodule ConverterTwo do
