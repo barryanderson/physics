@@ -1,21 +1,15 @@
+> Physics
+
+[![Travis Build Status](https://travis-ci.org/barryanderson/Physics.svg?branch=master)](https://travis-ci.org/barryanderson/Physics)
+[![Coverage Status](https://coveralls.io/repos/github/barryanderson/Physics/badge.svg?branch=master)](https://coveralls.io/github/barryanderson/Physics?branch=master)
+
 # Physics
 
-**TODO: Add description**
+A plain Elixir project for calculating rocket escape velocities of planets.  
 
-## Installation
+The purpose of this project is to provide a playground for learning the Elixir and Erlang languages.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `physics` to your list of dependencies in `mix.exs`:
+## Running
 
-```elixir
-def deps do
-  [
-    {:physics, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/physics](https://hexdocs.pm/physics).
-
+* Install dependencies with `mix deps.get`
+* Run `iex -S mix` fom the command line

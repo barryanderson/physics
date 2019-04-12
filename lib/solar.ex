@@ -6,7 +6,7 @@ defmodule Solar do
   def no_eva(flares), do: Enum.filter(flares, &(power(&1) > 1000))
 
   def deadliest(flares) do
-    Enum.map(flares, &(power(&1)))
-      |> Enum.max()
+    Enum.map(flares, &power(&1))
+    |> Enum.max()
   end
 end
