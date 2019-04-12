@@ -5,7 +5,7 @@
 
 # Physics
 
-An Elixir project for calculating rocket escape velocities of planets.   The purpose of this project is to provide a playground for learning the Elixir language and methodologies.
+An Elixir project for calculating escape velocities for rockets!   The purpose of this project is to provide a playground for learning the Elixir language and methodologies.
 
 ## Running
 
